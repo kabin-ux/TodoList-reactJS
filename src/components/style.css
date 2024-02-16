@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-div {
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgb(55, 232, 28) 0%,
+    rgb(44, 125, 225) 100%
+  );
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.child-div {
+  border-radius: 3%;
+  padding: 0rem 4rem;
+  width: 40rem;
+}
+
+.child-div:hover {
+  cursor: pointer;
+}
+
+.child-div h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 9px;
+  text-transform: capitalize;
+}
+
+.add-items{
+  margin-top: 39px;
+  margin-bottom: 49px;
+  border: 4px solid rgb(151, 111, 188);
+  padding: 0px 9px;
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.fa-plus {
+  margin-left: 17px;
+  font-size: 28px;
+}
+
+.add-items .fa-plus:hover{
+  color: blue;
+}
+
+.add-items .fa-edit:hover {
+  color: rgb(47, 214, 122);
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  color: #000;
+  font-size: 19px;
+  border: none;
+}
+
+input::placeholder{
+  color: white;
+}
+
+input,
+input:focus,
+input:active,
+input:active:focus {
+  padding: 9px 10px;
+  outline: none;
+}
+
+.each-item {
+  background: #fff;
+  padding: 1rem 1rem;
+  margin-top: 13px;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  margin-left: -1.6rem;
+  width: 110%;
+  word-break: break-word;
+  background: rgb(85, 41, 220);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.each-item:hover {
+  background: rgb(53, 101, 157);
+  color: rgb(64, 19, 197);
+}
+.each-item{
+  background: linear-gradient(
+    90deg,
+    rgb(97, 19, 254) 30%,
+    rgb(144, 17, 223) 70%
+  );
+}
+
+.each-item h3{
+  color: #fff;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.fa-edit, .fa-trash {
+  font-size: 29px;
+}
+
+.each-item .fa-trash:hover {
+  color: rgb(214, 47, 61);
+}
+
+.each-item .fa-edit:hover {
+  color: rgb(136, 197, 107);
+}
+
+.eachItem:hover h3 {
+  color: rgb(11, 11, 12);
+}
+
